@@ -1,0 +1,27 @@
+{
+  "name": "resume-charge",
+  "version": "1.0.0",
+  "description": "My Resume",
+  "scripts": {
+    "start": "charge serve source",
+    "build": "charge build source target"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aynik/resume-charge.git"
+  },
+  "keywords": [
+    "static",
+    "site",
+    "cv"
+  ],
+  "author": "aynik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aynik/resume-charge/issues"
+  },
+  "homepage": "https://github.com/aynik/resume-charge#readme",
+  "devDependencies": {
+    "@static/charge": "^1.7.0"
+  }
+}

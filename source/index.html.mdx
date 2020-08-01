@@ -1,0 +1,179 @@
+import Layout from './components/layout.html.jsx';
+
+export const meta = {
+  id: "index",
+  title: "Index",
+  path: "/",
+  index: 0
+}
+
+export const layout = (props) => <Layout {...props} />
+
+<header>
+    <h1>Pablo Vázquez Vidal</h1>
+    <div className="section">
+        <div className="title">
+            <h2>Full-Stack Developer</h2>
+        </div>
+        <div>
+            <h3>
+                <a href="https://github.com/aynik" data-href="referenceAddress" data-innertext="referenceText">
+                   @aynik (github.com)
+                </a>
+            </h3>
+            <h3>
+                <a href="" data-href="contactAddress" data-innertext="contactText"></a>
+            </h3>
+            <h3 data-innertext="phone"></h3>
+        </div>
+    </div>
+</header>
+<main>
+    <div className="section">
+        <div className="title">
+            <h3>Personal</h3>
+        </div>
+        <div className="columns">
+            <div>
+                <h3>Age</h3>
+                <p>34</p>
+            </div>
+            <div>
+                <h3>Nationality</h3>
+                <p>Spanish</p>
+            </div>
+            <div>
+                <h3>Languages</h3>
+                <p>Spanish, English, German, Japanese</p>
+            </div>
+        </div>
+    </div>
+    <div className="section">
+        <div className="title">
+            <h3>Skills</h3>
+        </div>
+        <div className="columns">
+            <div>
+                <h3>App development</h3>
+                <p>
+                    From web to native, desktop or mobile, I've developed multi-platform applications
+                    for more than 10 years with great success and excelent end-user experience. Always
+                    up to date with the latest technologies and good practices.
+                </p>
+            </div>
+            <div>
+                <h3>Cloud deployment</h3>
+                <p>
+                    Always performing zero-downtime deployments, working in depth with cloud service 
+                    providers like Amazon, Google and Microsoft, reducing costs and optimizing the 
+                    backend to properly serve millions of users.
+                </p>
+            </div>
+            <div>
+                <h3>System administration</h3>
+                <p>
+                    With deep knowledge about Unix and Linux systems, I've managed large internal 
+                    services like email, firewall, LDAP, NFS, DNS, VPN, SIP and many more.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div className="section padless tech">
+        <div className="title">
+            <h3>Technical</h3>
+        </div>
+        <div className="columns">
+            <ul>
+                <li>React</li>
+                <li>GraphQL</li>
+                <li className="last">Typescript</li>
+            </ul>
+            <ul>
+                <li>MongoDB</li>
+                <li>PostgreSQL</li>
+                <li className="last">Redis</li>
+            </ul>
+            <ul>
+                <li>NodeJS</li>
+                <li>Go</li>
+                <li className="last">Python</li>
+            </ul>
+            <ul>
+                <li>Swift</li>
+                <li>C++</li>
+                <li className="last">Java</li>
+            </ul> 
+        </div>
+    </div>
+    <div className="section">
+        <div className="title">
+            <h3>Experience</h3>
+        </div>
+        <div>
+            <div className="job">
+                <h3>Adgorithmics</h3>
+                <div className="spread">
+                    <h3>Full-Stack Developer</h3>
+                    <h4>2/2019 - Actuality</h4>
+                </div>
+                <p>
+                    Maintained Adgorithmics' online marketing platform built with Django, React and PostgreSQL, along numerous microservices written in NodeJS, Python and Go connected with NATS and RabbitMQ. 
+                    Developed a GraphQL API using TypeORM, TypeGraphQL and Apollo Server and built a comprehensive client frontend for it using Typescript and React. 
+                    Managed deployments on Google Cloud using Kubernetes. Performed other tasks like daily code reviews, second level support and open source project management. 
+                </p>
+            </div>
+            <div className="job">
+                <h3>Freelancing</h3>
+                <div className="spread">
+                    <h3>Full-Stack Developer</h3>
+                    <h4>3/2015 - 2/2019</h4>
+                </div>
+                <p>Built different applications and services for several customers:</p>
+                <ul>
+                    <li>A micropayment-enabled video platform, including a full adaptive web video player, dashboard and chrome extension.</li>
+                    <li>A internal messaging platform similar to Slack which offers an embeddable widget similar to ZenDesk to offer live support for end users (Go, Node.js, MongoDB, Redis).</li>
+                    <li>Adding features and bug fixes for an alumni social network (NodeJS).</li>
+                    <li>A control panel for a domain reseller to quickly check domains in bulk (Django, PostgreSQL).</li>
+                    <li>A web scraper and a companion chrome extension to visualy create configuration files for the scraper (Node.js, Chrome Web Extension).</li>
+                    <li>An API and a dashboard to manage electronic sensors for industrial machinery (Node.js, MongoDB).</li>
+                </ul>
+            </div>
+            <div className="job">
+                <h3>OpenBooking</h3>
+                <div className="spread">
+                    <h3>Full-Stack Developer</h3>
+                    <h4>7/2013 - 3/2015</h4>
+                </div>
+                <p>
+                    Developed from scratch a service (openbooking.ch) for swiss regional tourism offices to manage accomodations and reservations:
+                    It combines results from different data sources, deduplicating them and returning a unified JSON datastream.
+                    Employs machine learning (Google Prediction API) combined with the pareto principle to preemptively fetch results with at least an 80% of success at any time.
+                </p>
+            </div>
+            <div className="job">
+                <h3>PIXELTEX GmbH</h3>
+                <div className="spread">
+                    <h3>Systems Software Engineer</h3>
+                    <h4>1/2010 - 6/2013</h4>
+                </div>
+                <p>
+                    I performed several tasks for the largest customer of the company at the time, the Switzerland Tourism office (ST):
+                    A large migration to the AWS cloud for all of ST's public sites and many internal services like email, CMS, DNS, etc.
+                    A full rebuild of ST's award-winning main site (myswitzerland.com), employing MongoDB and Redis as dedicated precaching datastores to serve hotel accomodation results in realtime and geotagged query results.
+                    Addition of several features to ST's internal CMS like asynchronous image uploading and rescaling via message queue, critical security bug fixes, WYSIWYG edition capabilities and automatic content deduplication. 
+                </p>
+            </div>
+        </div>
+    </div>
+    <div className="section last">
+        <div className="title">
+            <h3>Education</h3>
+        </div>
+        <div>
+            <h3>Web Design Master Course (2008, Artes Design School)</h3>
+        </div>
+    </div>
+</main>
+<footer>
+    <p>Pablo Vázquez Vidal - ©2020</p>
+</footer>
