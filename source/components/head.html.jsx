@@ -37,6 +37,7 @@ export default () => {
       />
       <link rel="stylesheet" href="/stylesheets/global.css" />
 
+      <script src="/javascripts/tracking.js"></script>
       <script src="/javascripts/global.js"></script>
     </head>
   );
