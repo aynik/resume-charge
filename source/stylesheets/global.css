@@ -91,6 +91,14 @@ header .section > :not(.title) {
   width: calc(33% - (var(--left-column-width) / 3));
 }
 
+.profile {
+  float: left;
+  position: relative;
+  margin-left: -142px;
+  margin-right: 40px;
+  border: 1px solid #ccc;
+}
+
 .section > :not(.title) {
   width: 100%;
 }
