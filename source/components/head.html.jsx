@@ -1,5 +1,5 @@
 const title = "Pablo Vázquez Vidal";
-const description = "Full-Stack Developer";
+const description = "Senior Software Developer";
 const baseURL = "https://aynik.github.io";
 
 export default () => {
