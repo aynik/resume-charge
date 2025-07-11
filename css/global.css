@@ -1,0 +1,175 @@
+:root {
+  --left-column-width: 140px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  padding: 0 20px;
+  margin: 2vw auto;
+  min-width: 708px;
+  max-width: 1280px;
+  line-height: 155%;
+}
+
+a {
+  color: rgb(0, 0, 255);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  margin: 0;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 150%;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 110%;
+  margin-bottom: 5px;
+}
+
+@media print {
+  .pagebreak { 
+    page-break-before: always; 
+  }
+}
+
+.spread {
+  display: flex;
+  justify-content: space-between;
+}
+
+.spread > h3,
+.spread > h4 {
+  margin: 0;
+}
+
+.section {
+  display: flex;
+  padding-top: 1.8em;
+  padding-bottom: 1.8em;
+  border-bottom: 1px solid #ccc;
+}
+
+.section .title {
+  width: var(--left-column-width);
+}
+
+.section.padless {
+  padding: 0;
+}
+
+.section.padless .title {
+  margin-top: 2em;
+}
+
+header .section {
+  display: block;
+}
+
+header .section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+header .section > div {
+  display: inline-block;
+}
+
+header .section .title {
+  width: 50%;
+}
+
+header .section > :not(.title) {
+  float: right;
+  width: calc(33% - (var(--left-column-width) / 3));
+}
+
+.profile {
+  float: left;
+  position: relative;
+  margin-left: -142px;
+  margin-right: 40px;
+  border: 1px solid #ccc;
+}
+
+.section > :not(.title) {
+  width: 100%;
+}
+
+.columns {
+  display: flex;
+}
+
+.columns > div {
+  margin-left: 20px;
+}
+
+.columns > div:first-child {
+  margin-left: 0;
+}
+
+.columns > div {
+  width: 33%;
+}
+
+.columns > ul {
+  margin: 0;
+  width: 25%;
+}
+
+.tech ul {
+  padding-left: 0px;
+  border-right: 1px solid #ccc;
+  margin-right: 0;
+}
+
+.tech ul:last-child {
+  border-right: none;
+}
+
+.tech ul li:first-child {
+  padding: 2em 0 1em;
+}
+
+.tech ul li {
+  border-bottom: 1px solid #ccc;
+  list-style: none;
+  padding: 1em 0;
+  text-align: center;
+}
+
+.tech ul li:last-child {
+  border-bottom: none;
+  padding: 1em 0 2em;
+}
+
+.job {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+}
+
+@media print {
+  .noborder {
+    border-bottom: none !important;
+  }
+} 
+
+.job:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}

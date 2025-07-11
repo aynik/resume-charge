@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Pablo Vázquez Vidal - Senior Software Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Senior Software Developer">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aynik.github.io">
+    <meta property="og:title" content="Pablo Vázquez Vidal - Senior Software Developer">
+    <meta property="og:description" content="Senior Software Developer">
+    <meta property="og:image" content="https://aynik.github.io/resume/images/profile.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:site_name" content="Pablo Vázquez Vidal">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="@this_may_be_it">
+    <meta name="twitter:image" content="https://aynik.github.io/resume/images/profile.png">
+    
+    <link rel="canonical" href="https://aynik.github.io/resume">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@300&display=swap">
+    <link rel="stylesheet" href="css/global.css">
+    
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+    <script src="js/tracking.js"></script>
+    <script src="js/global.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Pablo Vázquez Vidal</h1>
+        <div class="section">
+            <div class="title">
+                <h2>Senior Software Developer</h2>
+                <h4>
+                Emerging from a self-taught background, I've established a thriving career in software development spanning over 15 years. I've successfully built and delivered multi-platform applications—from web to native, desktop, and mobile—with consistent success and top-tier end-user experiences. Throughout my journey, I've naturally gravitated towards the latest technologies and best practices, which has guided my evolution to a senior role in the field.
+                </h4>
+            </div>
+            <div>
+                <img class="profile" width="100" src="images/profile.png" />
+                <h3>
+                    <a href="https://github.com/aynik" data-href="referenceAddress" data-innertext="referenceText">
+                       @aynik (github.com)
+                    </a>
+                </h3>
+                <h3>
+                    <a href="" data-href="contactAddress" data-innertext="contactText"></a>
+                </h3>
+                <h3 data-innertext="phone"></h3>
+                <h3 data-innertext="location"></h3>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div hx-get="content/personal.html" hx-trigger="load" hx-target="this" hx-swap="innerHTML"></div>
+        <div hx-get="content/skills.html" hx-trigger="load" hx-target="this" hx-swap="innerHTML"></div>
+        <div hx-get="content/technical.html" hx-trigger="load" hx-target="this" hx-swap="innerHTML"></div>
+        <div hx-get="content/experience.html" hx-trigger="load" hx-target="this" hx-swap="innerHTML"></div>
+        <div hx-get="content/education.html" hx-trigger="load" hx-target="this" hx-swap="innerHTML"></div>
+    </main>
+    
+    <footer>
+        <p>Pablo Vázquez Vidal - ©2023</p>
+    </footer>
+</body>
+</html>
